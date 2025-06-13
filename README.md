@@ -4,7 +4,7 @@
 SafeLinks automates your Gmail security by scanning for malicious links in emails using the Google Safe Browsing API v4. When opening an email, SecureLinks will scan for links in your email and determine whether it is a safe URL or not.
 
 ## 🛠️Here's how it works:
-This project creates a chrome extension that allows users to check the safety of links in Gmail. This happens through two main parts: **contebnt.js** and **background.js**.
+This project creates a chrome extension that allows users to check the safety of links in Gmail. This happens through two main parts: **content.js** and **background.js**.
 ### content.js
 This script runs **directly** on Gmail pages. It's job is to find the links on the page and display safety indicators next to them.
 
@@ -18,7 +18,7 @@ This script runs **directly** on Gmail pages. It's job is to find the links on t
 **Monitoring for Changes:** It uses a MutationObserver to watch for changes in the Gmail page content. This ensures that any new links that appear are also scanned and checked. 
 
 ### background.js
-This script runs in the background and acts as a middleman between the content scirpt and the Google Safe Browse API. Having a background script also allows it to perform long tasks without affecting the web page performance, and can handle requests even when the content scipt's page isn't active.
+This script runs in the background and acts as a middleman between the content script and the Google Safe Browse API. Having a background script also allows it to perform long tasks without affecting the web page performance, and can handle requests even when the content scipt's page isn't active.
 
 **API Key Management:** It holds the Google Safe Browse API key, which is important when authenticating requests to the API. If you want to use this for yourslef, ***make sure you replace the "YOUR_GOOGLE_SAFE_BROWSING_API_KEY" with your own!!***
 
