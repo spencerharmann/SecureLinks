@@ -3,7 +3,7 @@
 
 SafeLinks automates your Gmail security by scanning for malicious links in emails using the Google Safe Browsing API v4. When opening an email, SecureLinks will scan for links in your email and determine whether it is a safe URL or not.
 
-## 🛠️🛠️Here's how it works:🛠️🛠️
+## 🛠️Here's how it works:🛠️
 This project creates a chrome extension that allows users to check the safety of links in Gmail. This happens through two main parts: **contebnt.js** and **background.js**.
 ### content.js
 This script runs **directly** on Gmail pages. It's job is to find the links on the page and display safety indicators next to them.
@@ -36,7 +36,7 @@ This script runs in the background and acts as a middleman between the content s
 7) Go to chrome://extensions/, turn on developer mode, and click "Load Unpacked"
 8) Select the SecureLinks folder, and you're good to go
 
-# 💻💻Why This Is Important💻💻
+# 💻Why This Is Important:💻
 The most exploitable part of any system is the person behind it -- even the most secure defenses can be bypassed if an attacker can trick a user into revealing sensitive information, clicking a malicious link, or downloading harmful software. This often happens through **social engineering**, where bad actors trick users into performing certain actions or exposing confidential data.
 
 A very common version of social engineering is **Phishing**, specifically email phishing. Attackers send emails that look legitimate, usually pretending to be trusted organizations or people. These emails typically have malicious links in them designed to take your information or download malware onto your computer. This can be gateways into methods like session fixation.
