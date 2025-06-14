@@ -27,14 +27,15 @@ This script runs in the background and acts as a middleman between the content s
 **Performs Safe Browse Check:** After getting the request, it creates a new request to the Google Safe Browse API, specifying the URL to check and the types of threats to look for: malware, social engineering, and unwanted software. If the API returns a match, it means the URL is unsafe, and the script extracts the threat type. If no matches are found, the URL is safe. If a problem happens, it has error handling for network issues and various API response statuses. Then, it sends the result back to content.js.
 
 ## 📃How To Set This Up (FREE)
-1) Go to the Google Cloud Console, and create a new project
-2) Go to "APIs & Services > Library"
-3) Search for "Google Safe Browsing API" and enable it for your project
-4) Go to "APIs & Services > Credentials"
-5) Click "Create credentials" and choose "API key"
-6) Copy the API key and put it into the background.js placeholder (YOUR_GOOGLE_SAFE_BROWSING_API_KEY)
-7) Go to chrome://extensions/, turn on developer mode, and click "Load Unpacked"
-8) Select the SecureLinks folder, and you're good to go
+1) Download the source files from the SecureLinks folder (above)
+2) Go to the Google Cloud Console, and create a new project
+3) Go to "APIs & Services > Library"
+4) Search for "Google Safe Browsing API" and enable it for your project
+5) Go to "APIs & Services > Credentials"
+6) Click "Create credentials" and choose "API key"
+7) Copy the API key and put it into the background.js placeholder (YOUR_GOOGLE_SAFE_BROWSING_API_KEY)
+8) Go to chrome://extensions/, turn on developer mode, and click "Load Unpacked"
+9) Select the SecureLinks folder, and you're good to go
 
 # 💻Why This Is Important:
 The most exploitable part of any system is the person behind it -- even the most secure defenses can be bypassed if an attacker can trick a user into revealing sensitive information, clicking a malicious link, or downloading harmful software. This often happens through **social engineering**, where bad actors trick users into performing certain actions or exposing confidential data.
