@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SecureLinks URL Inspection for Gmail</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            width: 300px;
+            padding: 15px;
+            text-align: center;
+            background-color: #f0f4f8;
+            color: #333;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba( 0,0,0,0.1 );
+        }
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+        p {
+            font-size: 0.9em;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+        .status-message {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #d1ecf1;
+            border-radius: 5px;
+            font-weight: bold;
+            color: #0c5460;
+        }
+        .important-note {
+            color: #dc3545;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>SecureLinks URL Inspection for Gmail</h2>
+    <p>SecureLinks automatically checks links in your Gmail emails using the Google Safe Browsing API.</p>
+    <p>A small indicator (🛡️ Safe, 🚨 Unsafe, ⏳ Checking...) will appear next to each link.</p>
+    <div class="important-note">
+        <p>You must replace 'YOUR_GOOGLE_SAFE_BROWSING_API_KEY' in the 'background.js' file with your own API key from the Google Cloud Console for this to work!</p>
+    </div>
+    <div class="status-message">
+        Scanning links in real-time on Gmail pages.
+    </div>
+</body>
+</html>
